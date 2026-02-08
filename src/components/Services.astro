@@ -1,0 +1,45 @@
+---
+const services = [
+	{
+		title: 'Estampado DTF',
+		description: 'Tecnología de última generación para estampados duraderos y de alta calidad. Perfecto para diseños complejos y colores vibrantes.',
+		icon: '🎨',
+	},
+	{
+		title: 'Buzos y Hoodies',
+		description: 'Buzos de algodón premium con capucha, ideales para equipos que buscan comodidad y estilo profesional.',
+		icon: '🧥',
+	},
+	{
+		title: 'Remeras Corporativas',
+		description: 'Remeras de alta calidad con tu logo y diseño personalizado. Disponibles en múltiples talles y colores.',
+		icon: '👕',
+	},
+];
+---
+
+<section id="servicios" class="py-20 px-4 bg-slate-800">
+	<div class="container mx-auto max-w-6xl">
+		<div class="text-center mb-16 animate-fade-in">
+			<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
+				Nuestros <span class="text-accent-500">Servicios</span>
+			</h2>
+			<p class="text-lg text-slate-300 max-w-2xl mx-auto">
+				Soluciones completas de indumentaria corporativa para hacer crecer tu marca
+			</p>
+		</div>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+			{services.map((service, index) => (
+				<div
+					class="bg-slate-900/30 backdrop-blur-xl p-8 border-4 border-white/20 hover:border-accent-500 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-[8px_8px_0px_0px_rgba(249,115,22,0.5)] shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] animate-slide-up"
+					style={`animation-delay: ${index * 0.1}s`}
+				>
+					<div class="text-5xl mb-6">{service.icon}</div>
+					<h3 class="text-2xl font-black mb-4 text-white uppercase tracking-tight">{service.title}</h3>
+					<p class="text-slate-200 leading-relaxed font-medium">{service.description}</p>
+				</div>
+			))}
+		</div>
+	</div>
+</section>
