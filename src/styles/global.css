@@ -2,6 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Royagna Font Face Declarations */
+@font-face {
+	font-family: 'Royagna';
+	src: url('/fonts/Royagna.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Royagna';
+	src: url('/fonts/Royagna-Italic.otf') format('opentype');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Royagna';
+	src: url('/fonts/Royagna-Outline.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Royagna';
+	src: url('/fonts/Royagna-OutlineItalic.otf') format('opentype');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
 @layer base {
 	:root {
 		/* Purple-ish Blue (Primary) */
@@ -39,5 +72,11 @@
 	body {
 		@apply bg-slate-900 text-slate-100 antialiased;
 		font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+	}
+}
+
+@layer utilities {
+	.font-royagna {
+		font-family: 'Royagna', sans-serif;
 	}
 }
