@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Services from '../components/Services.astro';
+import Productos from '../components/Productos.astro';
 import ContactForm from '../components/ContactForm.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppSticky from '../components/WhatsAppSticky.astro';
@@ -39,7 +40,7 @@ import '../styles/global.css';
 		<!-- Canonical URL -->
 		<link rel="canonical" href="https://texlab.com.ar/" />
 		
-		<!-- Google Fonts - Space Grotesk (Brutalist-friendly) -->
+		<!-- Google Fonts - Space Grotesk (Content font) -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -49,6 +50,7 @@ import '../styles/global.css';
 		<main>
 			<Hero />
 			<Services />
+			<Productos />
 			<ContactForm />
 		</main>
 		<Footer />

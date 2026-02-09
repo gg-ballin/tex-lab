@@ -5,6 +5,7 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Space Grotesk', 'system-ui', '-apple-system', 'sans-serif'],
+				royagna: ['Royagna', 'sans-serif'],
 			},
 			colors: {
 				primary: {
